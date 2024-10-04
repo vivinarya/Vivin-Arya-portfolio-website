@@ -3,17 +3,14 @@
 <head>
     <meta charset='UTF-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Vivin Arya</title>
     <link rel="stylesheet" href="page.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-
     <header class="header">
         <a href="#home" class="logo">Vivin <span>Arya</span></a>
-
-        <i class='bx bx-menu'  id="menu-icon"></i>
-
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#education">Education</a>
@@ -22,34 +19,30 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+    
 
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi , It's <span>Vivin</span></h1>
-            <h3 class="text-animation">I'm a <span class="typing-container"></span></h3>
+            <h1>Hi, It's <span>Vivin</span></h1>
+            <h3 class="text-animation">I'm a <span id="typing-text"></span></h3>
             <p></p>
-
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/vivin-arya" target="_blank" class="social-link"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/vivinarya" target="_blank" class="social-link"><i class='bx bxl-github' ></i></a>
                 <a href="https://stackoverflow.com/users/27536642/vivin-arya" target="_blank" class="social-link"><i class='bx bxl-stack-overflow'></i></a>
             </div>
-
             <div class="btn-group">
                 <a href="#contact" class="btn">Contact</a>
             </div>
-
         </div>
         <div class="home-img">
-            <img src="home.jpg" alt="">
+            <img src="home.jpg" alt="Vivin's Image">
         </div>
     </section>
 
-    <script src="script.js"></script>
 
     <section class="education" id="education">
         <h2 class="heading">Education</h2>
-        
         <div class="timeline-items">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
@@ -59,7 +52,6 @@
                     <p>Completed primary and secondary education.</p>
                 </div>
             </div>
-    
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2022 - 2023</div>
@@ -68,19 +60,62 @@
                     <p>Velammal International School, Chennai.</p>
                 </div>
             </div>
-    
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2024 - Present</div>
                 <div class="timeline-content">
                     <h3>VIT Chennai</h3>
-                    <p>Pursuing a degree in Btech CSE (CORE).</p>
+                    <p>Pursuing a degree in BTech CSE (CORE).</p>
                 </div>
             </div>
         </div>
-    </section>    
-    </section>    
+    </section>
+
+    <!-- Skills Section -->
+    <section class="Skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="Skills-container">
+            <div class="skills-info">
+                <h4>Programming Skills</h4>
+                <p><strong>Python Development:</strong> Proficient in Python programming, specializing in data analysis, web development, and machine learning.</p>
+                <p><strong>Frontend Development:</strong> Skilled in HTML, CSS, and JavaScript, enabling the creation of visually appealing and interactive user interfaces.</p>
+            </div>
+            <div class="skills-info">
+                <h4>People Skills</h4>
+                <p><strong>Public Speaking:</strong> Experienced in delivering presentations and technical talks to diverse audiences, effectively communicating complex concepts.</p>
+                <p><strong>Collaboration:</strong> Proven ability to work effectively in teams, fostering collaboration and contributing to shared goals.</p>
+                <p><strong>Communication:</strong> Strong interpersonal and communication skills, enabling the building of relationships and collaboration with stakeholders.</p>
+            </div>
         </div>
     </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <h2 class="heading">Achievements</h2>
+        <div class="achievements-container">
+            <div class="achievements-info">
+                <p>Participated in the LUGVITC CTF competition Cyber 0day 3.0 and secured second place.</p>
+                <p>Started a Clothing company with my friend Called Sora.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="border-box contact-container">
+            <div class="contact-info">
+                <i class='bx bxs-phone'></i>
+                <p><strong>Phone:</strong> +91 7795638727</p>
+            </div>
+            <div class="contact-info">
+                <i class='bx bxs-envelope'></i>
+                <p><strong>Email:</strong> vivin.arya2@gmail.com</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+

@@ -243,45 +243,6 @@ span {
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
 }
-
-/* Text Animation and Typing Effect */
-.text-animation span {
-    position: relative;
-}
-
-.text-animation span::before {
-    content: "Web Developer";
-    color: white;
-    animation: words 6s infinite;
-}
-
-.text-animation span::after {
-    content: "";
-    position: absolute;
-    right: -8px;
-    width: 3px;
-    background-color: var(--main-color);
-    animation: blink 1s steps(1) infinite;
-    height: 100%;
-}
-
-@keyframes words {
-    0%, 33% {
-        content: "Web Developer";
-    }
-    34%, 66% {
-        content: "Software Tester";
-    }
-    67%, 100% {
-        content: "Coding Enthusiast";
-    }
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
 .heading{
     font-size: 8rem;
     text-align: center;
@@ -460,4 +421,158 @@ span {
         height: 250px;
     }
 }
+/* Skills Section */
+.Skills {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+}
 
+.Skills h2 {
+    margin-bottom: 5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.Skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 0 15px;
+}
+
+.skills-info {
+    background-color: var(--bg-color);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-in-out;
+}
+
+
+.skills-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+
+.skills-info h4 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.skills-info p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .Skills-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+/* Achievements Section */
+.achievements {
+    background: var(--second-bg-color);
+    padding: 100px 15px;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.achievements-info {
+    background-color: var(--bg-color);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--main-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.achievements-info h4 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.achievements-info p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.achievements-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--main-color);
+}
+.typing-container h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #333; 
+}
+#typing-text {
+    color: #fdfcfb; 
+}
+.cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    pointer-events: none;
+    z-index: 999;
+    transition: transform 0.1s ease;
+}
+.cursor-follower {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    pointer-events: none;
+    z-index: 998;
+    transition: transform 0.2s ease;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; 
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 2rem;
+}
+
+.contact-info i {
+    font-size: 3rem;
+    color: #000; 
+}
+.contact .heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
